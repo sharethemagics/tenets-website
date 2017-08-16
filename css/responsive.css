@@ -113,16 +113,7 @@
 		text-align: center;
 		margin-bottom: 50px;
 	}
-	.team-member {
-		margin-bottom: 50px;
-	}
-	.team-members .col-sm-3, 
-	.pricing-table .col-sm-3, 
-	#portfolio .col-sm-3, 
-	.blog-posts .col-sm-4  {
-		width: 50%;
-		float: left;
-	}
+	
 	.social-icons ul li a {
 		font-size: 14px;
 		height: 30px;
