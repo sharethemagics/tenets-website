@@ -242,15 +242,12 @@ section {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
-  padding-top: 30px;
+  padding-top: 30px ;
   padding-bottom: 15px;
 }
 
 .navbar-right li.active a {
-
-  
   background-color:  rgba(0,0,0,.2);
-/* border-bottom: 4px solid #64bb43 ;*/
 }
 
 .navbar-brand h1 {
@@ -276,13 +273,26 @@ section {
 }
 
 .our-services .col-sm-4:hover .service-icon {
-  background-color: #333;
+  background-color: #98FB98;
 }
 
 .our-services .col-sm-4 {
   border-right:1px solid #f2f2f2;
   border-bottom:1px solid #f2f2f2;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
+}
+.our-services .col-sm-4:hover{
+  background-color: #AFEEEE;
+box-shadow: 0px 0px 150px #f2f2f2;
+z-index: 2;
+-webkit-transition: all 200ms ease-in;
+-webkit-transform: scale(1.5);
+-ms-transition: all 200ms ease-in;
+-ms-transform: scale(1.5);   
+-moz-transition: all 200ms ease-in;
+-moz-transform: scale(1.5);
+transition: all 200ms ease-in;
+transform: scale(1.5);
 }
 
 .our-services .col-sm-4:nth-child(4), 
@@ -350,7 +360,7 @@ section {
 /*************************
 *********Team CSS*********
 **************************/
-#team {
+/*#team {
   padding-top: 0;
 }
 
@@ -430,6 +440,69 @@ section {
   font-size: 14px;
   margin-bottom: 15px;
   color: #999;
+} */
+
+/* ==========================================================================
+team section
+========================================================================== */
+#team {
+  text-align: center;
+}
+#team h3 {
+  color: #00c6d7;
+  font-size: 14px;
+  font-weight: bold;
+}
+#team .col-md-3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#team .team-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+#team .team-des {
+  background-color: rgba(00,00,00,0.6);
+  position: absolute;
+  color: #ffffff;
+  opacity: 0;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#team .team-des:hover {
+ opacity: 1;
+}
+#team img {
+  margin: 0 auto;
+}
+
+#team .social-icon li a {
+  color: #fff;
+}
+
+#team .social-icon li a:hover {
+  color: #00c6d7;
 }
 
 
@@ -565,7 +638,43 @@ ul.address {
 #footer .social-icons ul li a.tumblr:hover {
   background-color: #ff6b00;
 }
+.social-icons {
+  margin-top:30px;
+  text-align: center;
+}
 
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.social-icons ul li {
+  float: left;
+  margin-right: 8px;
+}
+
+.social-icons ul li:last-child {
+  margin-right: 0;
+}
+
+.social-icons ul li a {
+  color:#fff;
+  background-color: #d9d9d9;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  display: block;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.social-icons ul li a:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 /*Presets*/
 
 
@@ -625,4 +734,96 @@ ul.address {
     -webkit-transform: translateY(46px);
             transform: translateY(46px);
   }
+}
+
+
+
+/*services*/
+
+#fh5co-features {
+  border-bottom: 1px solid #f2f2f2;
+  
+  background: #fafafa;
+   position: relative;
+  
+}
+
+.fh5co-feature, .fh5co-figure {
+  display: block;
+  color: #444;
+  float: left;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  padding: 40px 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 1.5em;
+}
+.fh5co-feature:hover, .fh5co-feature:focus, .fh5co-feature:active, .fh5co-figure:hover, .fh5co-figure:focus, .fh5co-figure:active {
+  text-decoration: none;
+  outline: none;
+}
+.fh5co-feature .fh5co-feature-icon, .fh5co-figure .fh5co-feature-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #4fd2c2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.fh5co-feature .fh5co-feature-icon i, .fh5co-figure .fh5co-feature-icon i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 50px;
+  color: #4fd2c2;
+}
+.fh5co-feature .fh5co-feature-lead, .fh5co-feature .fh5co-figure-lead, .fh5co-figure .fh5co-feature-lead, .fh5co-figure .fh5co-figure-lead {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.fh5co-feature .fh5co-feature-text, .fh5co-feature .fh5co-figure-text, .fh5co-figure .fh5co-feature-text, .fh5co-figure .fh5co-figure-text {
+  color: #919191;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 24px;
+}
+.fh5co-feature:hover, .fh5co-feature.active, .fh5co-figure:hover, .fh5co-figure.active {
+  -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+  margin-top: -10px;
+  
+
+border-bottom: 2px solid #3dc9b3;
+
+}
+@media screen and (max-width: 768px) {
+  .fh5co-feature:hover, .fh5co-feature.active, .fh5co-figure:hover, .fh5co-figure.active {
+    margin-top: 0px;
+  }
+}
+.fh5co-feature:hover .fh5co-feature-icon, .fh5co-feature.active .fh5co-feature-icon, .fh5co-figure:hover .fh5co-feature-icon, .fh5co-figure.active .fh5co-feature-icon {
+  background: #4fd2c2;
+}
+.fh5co-feature:hover .fh5co-feature-icon i, .fh5co-feature.active .fh5co-feature-icon i, .fh5co-figure:hover .fh5co-feature-icon i, .fh5co-figure.active .fh5co-feature-icon i {
+  color: #fff;
 }
