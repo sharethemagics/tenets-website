@@ -257,6 +257,7 @@ section {
 /*************************
 ********Service CSS*******
 **************************/
+/*
 #services {
   padding-top: 110px;
 }
@@ -309,7 +310,7 @@ transform: scale(1.5);
 
 .service-info h3 {
   margin-top: 35px;
-}
+}*/
 
 /* ==========================================================================
 about section
@@ -794,7 +795,7 @@ ul.address {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  padding: 40px 10px;
+  padding: 20px 10px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
